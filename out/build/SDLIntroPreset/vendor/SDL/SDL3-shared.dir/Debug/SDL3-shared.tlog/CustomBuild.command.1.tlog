@@ -1,0 +1,10 @@
+^C:\USERS\KARL\DEV\CPP\SDLINTRO\VENDOR\SDL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Karl/dev/CPP/SDLIntro -BC:/Users/Karl/dev/CPP/SDLIntro/out/build/SDLIntroPreset --check-stamp-file C:/Users/Karl/dev/CPP/SDLIntro/out/build/SDLIntroPreset/vendor/SDL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

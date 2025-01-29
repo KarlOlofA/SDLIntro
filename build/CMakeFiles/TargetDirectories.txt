@@ -1,0 +1,7 @@
+C:/Users/Karl/dev/CPP/SDLIntro/build/CMakeFiles/SDLIntro.dir
+C:/Users/Karl/dev/CPP/SDLIntro/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Karl/dev/CPP/SDLIntro/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Karl/dev/CPP/SDLIntro/build/vendor/SDL/CMakeFiles/SDL3-shared.dir
+C:/Users/Karl/dev/CPP/SDLIntro/build/vendor/SDL/CMakeFiles/SDL3_test.dir
+C:/Users/Karl/dev/CPP/SDLIntro/build/vendor/SDL/CMakeFiles/SDL_uclibc.dir
+C:/Users/Karl/dev/CPP/SDLIntro/build/vendor/SDL/CMakeFiles/ALL_BUILD.dir
