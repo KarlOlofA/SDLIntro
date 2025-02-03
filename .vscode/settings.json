@@ -56,6 +56,13 @@
         "ratio": "cpp",
         "sstream": "cpp",
         "string": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "vector2d": "cpp",
+        "algorithm": "cpp",
+        "map": "cpp",
+        "mutex": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "xtree": "cpp"
     }
 }

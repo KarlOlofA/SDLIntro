@@ -1,2 +1,4 @@
 C:\Users\Karl\dev\CPP\SDLIntro\source\Application.cpp;C:\Users\Karl\dev\CPP\SDLIntro\build\SDLIntro.dir\Debug\Application.obj
+C:\Users\Karl\dev\CPP\SDLIntro\source\ObjectComponent\ObjectComponent.cpp;C:\Users\Karl\dev\CPP\SDLIntro\build\SDLIntro.dir\Debug\ObjectComponent.obj
+C:\Users\Karl\dev\CPP\SDLIntro\source\Rendering\SpriteSheetRenderComponent\SpriteSheetRenderComponent.cpp;C:\Users\Karl\dev\CPP\SDLIntro\build\SDLIntro.dir\Debug\SpriteSheetRenderComponent.obj
 C:\Users\Karl\dev\CPP\SDLIntro\main.cpp;C:\Users\Karl\dev\CPP\SDLIntro\build\SDLIntro.dir\Debug\main.obj

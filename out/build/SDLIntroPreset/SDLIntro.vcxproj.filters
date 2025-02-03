@@ -4,14 +4,37 @@
     <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\ObjectComponent\ObjectComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Rendering\SpriteSheetRenderComponent\SpriteSheetRenderComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Utils\Types\Vector2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Karl\dev\CPP\SDLIntro\source\ObjectComponent\ObjectComponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Rendering\SpriteSheetRenderComponent\SpriteSheetRenderComponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\Users\Karl\dev\CPP\SDLIntro\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{70B9474E-5FBF-34ED-BE16-05C88F568526}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{4B2C965F-1C48-300E-B4C3-B635956B3C39}</UniqueIdentifier>
     </Filter>

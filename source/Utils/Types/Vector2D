@@ -1,0 +1,18 @@
+
+struct Vector2D
+{
+
+public:
+    Vector2D() = default;
+    ~Vector2D() {};
+
+    Vector2D(float x, float y) : x(x), y(y) {};
+
+    Vector2D operator+(Vector2D const &other)
+    {
+        return Vector2D(x+other.x, y+other.y);
+    };
+
+    float x = 0;
+    float y = 0;
+};

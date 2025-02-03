@@ -4,14 +4,34 @@
     <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\ObjectComponent\ObjectComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Rendering\SpriteSheetRenderComponent\SpriteSheetRenderComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Karl\dev\CPP\SDLIntro\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Application.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Karl\dev\CPP\SDLIntro\source\ObjectComponent\ObjectComponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Karl\dev\CPP\SDLIntro\source\Rendering\SpriteSheetRenderComponent\SpriteSheetRenderComponent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <CustomBuild Include="C:\Users\Karl\dev\CPP\SDLIntro\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B49540B2-A54B-335F-81EE-A7A78B827DC9}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{C6F1E2B0-8CDA-3FDC-9D47-0C214B649E16}</UniqueIdentifier>
     </Filter>

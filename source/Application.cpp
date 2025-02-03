@@ -4,6 +4,7 @@ Application::Application()
 {
     passedTime = 0;
 
+    // Window
     m_window = SDL_CreateWindow("Window", 1280, 720, 0);
     if (!m_window)
     {
@@ -12,27 +13,20 @@ Application::Application()
         return;
     }
 
-    m_window_surface = SDL_GetWindowSurface(m_window);
-
-    if (!m_window_surface)
+    // Renderer
+    m_renderer = SDL_CreateRenderer(m_window, nullptr);
+    if (!m_renderer)
     {
-        std::cout << "Failed to get window's surface\n";
+        std::cout << "Failed to create renderer\n";
         std::cout << "SDL3 Error: " << SDL_GetError() << "\n";
         return;
     }
+    SDL_SetRenderDrawColor(m_renderer, 0, 0, 0, 255);
 
-    m_image = LoadSurface("assets/robosheet.bmp");
-    m_image_position.x = 0;
-    m_image_position.y = 0;
-    m_image_position.w = 22;
-    m_image_position.h = 43;
+    RenderComponent = new SpriteSheetRenderComponent(m_renderer, LoadTexture("assets/robosheet.bmp"), {0, 0, 54, 100});
 
-    m_image_x = 0;
-    m_image_y = 0;
-
-    if (!m_image)
-    {
-        std::cout << "Failed to load image\n";
+    if(!RenderComponent){
+        std::cout << "Failed to create render component\n";
         std::cout << "SDL3 Error: " << SDL_GetError() << "\n";
         return;
     }
@@ -40,7 +34,11 @@ Application::Application()
 
 Application::~Application()
 {
-    SDL_DestroySurface(m_window_surface);
+    if(RenderComponent){
+        delete RenderComponent;
+    }
+
+    SDL_DestroyRenderer(m_renderer);
     SDL_DestroyWindow(m_window);
 }
 
@@ -49,7 +47,6 @@ void Application::Tick()
     bool running = true;
     while (running)
     {
-
         // Listen to events such as quit
         SDL_Event event;
         if (SDL_PollEvent(&event) != 0)
@@ -61,11 +58,12 @@ void Application::Tick()
                 break;
             }
         }
-        //std::cout << "pos: " << 5 * GetDeltaTime() <<std::endl;
 
-        m_image_x += (5.0 * GetDeltaTime());
-        std::cout << "pos: " << m_image_x <<std::endl;
-        m_image_position.x = m_image_x;
+        Vector2D newPosition = RenderComponent->GetPosition() + Vector2D(30.0*GetDeltaTime(), 0);
+
+        RenderComponent->SetPosition(newPosition);
+        //m_image_x += (5.0 * GetDeltaTime());
+
 
         Draw();
     }
@@ -73,15 +71,20 @@ void Application::Tick()
 
 void Application::Draw()
 {
-    SDL_UpdateWindowSurface(m_window);
-    SDL_BlitSurface(m_image, nullptr, m_window_surface, &m_image_position);
+    SDL_RenderClear(m_renderer);
+    RenderComponent->Draw(GetDeltaTime());
+    SDL_RenderPresent(m_renderer);
 }
 
 double Application::GetDeltaTime()
 {
-    double currentTime = SDL_GetTicks() / 1000.0;
+    double currentTime = clock() / 1000.0;
     double deltaTime = currentTime - passedTime;
     passedTime = currentTime;
+    if(deltaTime <= 0){
+        //deltaTime = 0.001;
+    }
+    std::cout << "Delta: " << deltaTime << std::endl;
     return deltaTime;
 }
 
@@ -98,4 +101,9 @@ SDL_Surface *Application::LoadSurface(char const *path)
     }
 
     return image_surface;
+}
+
+SDL_Texture *Application::LoadTexture(char const *path)
+{
+    return SDL_CreateTextureFromSurface(m_renderer, LoadSurface(path));
 }

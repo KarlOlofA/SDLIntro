@@ -1,2 +1,5 @@
 C:\Users\Karl\dev\CPP\SDLIntro\source\Application.cpp;C:\Users\Karl\dev\CPP\SDLIntro\out\build\SDLIntroPreset\SDLIntro.dir\Debug\Application.obj
+C:\Users\Karl\dev\CPP\SDLIntro\source\ObjectComponent\ObjectComponent.cpp;C:\Users\Karl\dev\CPP\SDLIntro\out\build\SDLIntroPreset\SDLIntro.dir\Debug\ObjectComponent.obj
+C:\Users\Karl\dev\CPP\SDLIntro\source\Rendering\SpriteSheetRenderComponent\SpriteSheetRenderComponent.cpp;C:\Users\Karl\dev\CPP\SDLIntro\out\build\SDLIntroPreset\SDLIntro.dir\Debug\SpriteSheetRenderComponent.obj
+C:\Users\Karl\dev\CPP\SDLIntro\source\Utils\Types\Vector2D.cpp;C:\Users\Karl\dev\CPP\SDLIntro\out\build\SDLIntroPreset\SDLIntro.dir\Debug\Vector2D.obj
 C:\Users\Karl\dev\CPP\SDLIntro\main.cpp;C:\Users\Karl\dev\CPP\SDLIntro\out\build\SDLIntroPreset\SDLIntro.dir\Debug\main.obj

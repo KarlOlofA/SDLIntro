@@ -4,6 +4,8 @@
 #include <iostream>
 #include <chrono>
 
+#include "Rendering/SpriteSheetRenderComponent/SpriteSheetRenderComponent.hpp"
+
 class Application
 {
 
@@ -18,6 +20,7 @@ public:
     double GetDeltaTime();
 
     SDL_Surface* LoadSurface(char const *path);
+    SDL_Texture* LoadTexture(char const *path);
 
 private:
 
@@ -29,9 +32,9 @@ private:
     double m_image_y;
 
     SDL_Window* m_window;
-    SDL_Surface* m_window_surface;
+    SDL_Renderer* m_renderer;
     SDL_Event m_window_event;
-    
-    SDL_Surface *m_image;
-    SDL_Rect     m_image_position;
+
+    SpriteSheetRenderComponent* RenderComponent;
+
 };
